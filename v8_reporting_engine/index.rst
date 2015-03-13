@@ -165,6 +165,7 @@ Declare a report
         name="account.report_invoice"
         file="account.report_invoice"
         attachment_use="True"
+        menu="True"
         attachment="(object.state in ('open','paid')) and
             ('INV'+(object.number or '').replace('/','')+'.pdf')"
     />
